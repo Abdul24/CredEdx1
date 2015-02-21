@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
+  root            'content_pages#home'
+  
+  get              'content_pages/faq'
+
+  get              'content_pages/blog'
+
+  get              'content_pages/contact'
+
+  get              'content_pages/earlyaccess'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

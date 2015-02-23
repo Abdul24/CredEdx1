@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'pg'
+gem 'puma'
 gem 'bcrypt', '~> 3.1.7'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-will_paginate', '0.0.10'
@@ -18,7 +19,6 @@ gem 'will_paginate',           '3.0.7'
 
 
 group :development, :test do
-  gem 'pg'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -33,5 +33,5 @@ end
 group :production do 
   gem 'pg'
   gem 'rails_12factor', '0.0.2'
-  #gem 'unicorn',        '4.8.3'
+  gem 'puma'           
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root                     'content_pages#home'
   
   get   'faq'         =>   'content_pages#faq'

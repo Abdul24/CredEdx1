@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'pg'
 gem 'puma'
+# Devise authentication
+gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-will_paginate', '0.0.10'
@@ -21,7 +23,7 @@ gem 'will_paginate',           '3.0.7'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  gem 'spring' 
 end
 
 group :test do

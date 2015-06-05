@@ -1,15 +1,20 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.0'
 gem 'pg'
 gem 'puma'
+
 # Devise authentication
 gem 'devise'
+
 gem 'bcrypt', '~> 3.1.7'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-will_paginate', '0.0.10'
-gem 'bootstrap-sass',       '3.2.0.0'
+gem 'bootstrap-sass', '~> 3.3.4.1'
+
+#automatically adds the proper vendor prefixes to your CSS code when it is compiled.
+gem 'autoprefixer-rails', '~> 5.2.0'
+
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'

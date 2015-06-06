@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root                     'content_pages#home'
+  root                     'content_pages#home'         # creates root_path
   
-  get   'faq'         =>   'content_pages#faq'
+  get   'faq'         =>   'content_pages#faq'          # creates faq_path
 
-  get   'blog'        =>   'content_pages#blog'
+  get   'blog'        =>   'content_pages#blog'         # creates blog_path
 
-  get   'contact'     =>   'content_pages#contact'
+  get   'contact'     =>   'content_pages#contact'      # creates contact_path
 
-  get   'earlyaccess' =>   'content_pages#earlyaccess'
+  get   'earlyaccess' =>   'content_pages#earlyaccess'  # creates earlyaccess_path
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

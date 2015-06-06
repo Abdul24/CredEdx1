@@ -1,25 +1,23 @@
 <% provide(:title, "Home") %>
-<div class="container">
 <div class="jumbotron">
   
+
 <h1>Welome to Crededx</h1>
  
   <% if user_signed_in? %>
-          # do something
+      
      <% else %>
-     redirect_to '/blog'
-  <p>
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-       </p>
+     
+  
   <% end %>  
  
 <p>
   This is the Home page for the
   <a href="http://www.onemonthcredit.com/">One Month Credit</a>
    application.
-  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-default btn-lg" %>
+    <%= link_to "Sign up", new_user_registration_path , class: "btn btn-default btn-lg" %>
 </p>
-</div> 
-  
+
+  </div>
+ 
   

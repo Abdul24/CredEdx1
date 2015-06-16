@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root                     'content_pages#home'         # creates root_path
+  
+  root                     'content_pages#Home'         # creates root_path
   
   get   'faq'         =>   'content_pages#faq'          # creates faq_path
 
@@ -10,6 +11,10 @@ Rails.application.routes.draw do
   get   'contact'     =>   'content_pages#contact'      # creates contact_path
 
   get   'earlyaccess' =>   'content_pages#earlyaccess'  # creates earlyaccess_path
+  
+  devise_scope :user do
+  get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

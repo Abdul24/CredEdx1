@@ -1,2 +1,24 @@
+// navbar style sass
+$body-bg: #ecf0f1;
+$navbar-default-bg: white;
+$navbar-default-link-color: red;
+$navbar-height: 40px;
+$navbar-default-brand-hover-color: none;
+$navbar-default-link-hover-color: green;
+
+// jumbotron style sass
+$jumbotron-bg: white;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+.navbar-brand {
+  
+  font-size: 20px;
+}
+.nav > li {
+  font-size: 14px;
+  font-weight:bold;
+}
+
+.jumbotron {
+  text-align: center;
+}  

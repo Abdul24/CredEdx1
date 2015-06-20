@@ -1,24 +1,133 @@
 // navbar style sass
-$body-bg: #ecf0f1;
+$body-bg: white;
 $navbar-default-bg: white;
-$navbar-default-link-color: red;
-$navbar-height: 40px;
-$navbar-default-brand-hover-color: none;
-$navbar-default-link-hover-color: green;
+$navbar-default-link-color:#818386 ;
+$navbar-height: 65px; 
+$navbar-default-link-hover-color: #3B9CE7;
 
 // jumbotron style sass
-$jumbotron-bg: white;
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
-.navbar-brand {
-  
-  font-size: 20px;
-}
-.nav > li {
-  font-size: 14px;
-  font-weight:bold;
+
+// CSS Styling below 
+
+body {
+    font-family: "Helvetica Neue",
+    Helvetica,Arial, sans-serif;
+    font-size: 15px;  
 }
 
-.jumbotron {
+//navbar style
+.nav > li {
+  font-size: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  line-height: 40px; 
+}
+.navbar {
+  margin-bottom:0;
+  padding-bottom:7px;
+}
+
+//body
+#landing1{
+  background-color: #2580c0;
+  opacity: 0.9;
+  height: 525px;
+  color: white;
   text-align: center;
+  padding-top:20px;
 }  
+#landing1 h1{
+font-size: 4.0em;
+    line-height: 1;
+}
+#landing1 p{
+ font-size: 20px;
+  font-weight:normal;
+}
+
+#brand2{
+    color: #f3b563;
+}
+
+
+.btn {
+    padding: 16px 40px;
+    border: 0 none;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn-primary.gradient {
+    background: -moz-linear-gradient(top,  #f3b563 50%, #ef8d2e 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f3b563), color-stop(50%,#ef8d2e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f3b563 50%,#ef8d2e 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f3b563 50%,#ef8d2e 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f3b563 50%,#ef8d2e 50%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f3b563 50%,#ef8d2e 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3b563', endColorstr='#ef8d2e',GradientType=0 ); /* IE6-9 */
+}
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #f3b563;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #ef8d2e;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn.sharp {
+  border-radius:0;
+}  
+
+#middle{
+background-color: #fff;
+    margin-top:0;
+    font-weight:normal;
+}
+
+#brand3{
+  color:#818386;
+  font-weight:normal;
+}
+//container-fluid" id="section3"//
+#section3{
+  
+    padding:10px 15px 75px 15px;
+}
+
+
+//container-fluid id="section4">
+
+#section4{
+background-color:#ecf0f1;
+    color: black;
+    font-weight:bold;
+    text-align: center;
+    padding:10px 0 25px;
+}
+//container-fluid id="footer">
+#footer{
+  background-color:#818386;
+  padding: 30px;
+  
+}
+#footer  ul{
+list-style-type: none;
+}
+

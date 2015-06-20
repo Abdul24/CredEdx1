@@ -1,6 +1,6 @@
 class ContentPagesController < ApplicationController
   
-  def home
+  def Home
   end  
   
   def faq

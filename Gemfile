@@ -15,7 +15,6 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-will_paginate', '0.0.10'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 
 #automatically adds the proper vendor prefixes to your CSS code when it is compiled.
